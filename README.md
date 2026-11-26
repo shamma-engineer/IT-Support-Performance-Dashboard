@@ -1,51 +1,77 @@
 # IT Support Performance Dashboard
 
-### Interactive Data Visualization Project | Tableau Public
+### Interactive Data Analytics & Visualization Project | Tableau Public
 
-An interactive data analytics dashboard designed to visualize IT support ticket activity across multiple cities and technical issue categories.
+An interactive dashboard developed to analyze and visualize IT support tickets across multiple cities and technical issue categories.
 
-This project was developed as a hands-on learning exercise to practice data visualization, dashboard design, geographic analysis, and interactive filtering using Tableau Public.
+This project was created as a hands-on learning exercise to strengthen practical skills in data analysis, data visualization, geographic mapping, KPI design, and interactive dashboard development using Tableau Public.
 
 **Developer:** Shamma Thari Alreshidi  
 **Project Date:** November 2026  
-**Tool:** Tableau Public  
 **Project Type:** Data Analytics & Visualization  
-**Status:** Completed – Published Interactive Dashboard
+**Primary Tool:** Tableau Public  
+**Status:** Completed and Published
 
 ---
 
-## Live Dashboard
+## Live Interactive Dashboard
 
-**[View the Interactive Dashboard on Tableau Public](https://public.tableau.com/app/profile/shamma.thari/viz/book1_17956673543020/ITSupportPerformanceDashboard)**
+**[Explore the Dashboard on Tableau Public](https://public.tableau.com/app/profile/shamma.thari/viz/book1_17956673543020/ITSupportPerformanceDashboard)**
 
-The published dashboard allows users to explore the sample data through interactive geographic filtering.
+The published dashboard allows users to explore simulated IT support data and interact with geographic filters.
+
+### Dashboard Preview
+
+![IT Support Performance Dashboard](dashboard-preview.png)
 
 ---
 
 ## Project Overview
 
-The IT Support Performance Dashboard visualizes simulated technical support requests across three Saudi Arabian cities:
+The IT Support Performance Dashboard is an educational data visualization project designed to demonstrate how structured IT support data can be transformed into meaningful and interactive visualizations.
+
+The dashboard analyzes simulated support requests from three cities in Saudi Arabia:
 
 - Hail
 - Riyadh
 - Jeddah
 
-It provides an overview of support ticket volume, geographic distribution, and technical issue categories.
+It provides insights into:
 
-The dashboard helps demonstrate how raw operational data can be transformed into meaningful visual information.
+- Total support ticket volume
+- Geographic distribution of support requests
+- Technical issue categories
+- Differences in ticket volume between cities
+- Interactive filtering of support data
+
+The project focuses on presenting information clearly and making it easier to explore operational patterns.
 
 ---
 
 ## Tools & Technologies
 
+**Data Visualization**
 - Tableau Public
-- Data Visualization
-- Data Analysis
-- CSV Data Sources
 - Interactive Dashboards
 - Geographic Mapping
+- Bar Charts
+- KPI Indicators
+
+**Data Analysis**
 - Data Aggregation
 - Data Filtering
+- Data Exploration
+- Basic Analytical Reporting
+
+**Data Preparation**
+- Google Sheets
+- CSV Data Files
+- Structured Tabular Data
+- Data Type Identification
+
+**Documentation**
+- GitHub
+- Markdown
 
 ---
 
@@ -53,48 +79,68 @@ The dashboard helps demonstrate how raw operational data can be transformed into
 
 ### 1. Total Support Tickets
 
-Displays the total number of support tickets using a KPI indicator.
+A KPI indicator displays the total number of support requests included in the dataset.
 
 **Total Tickets: 152**
 
+The KPI dynamically updates when a city is selected through the interactive map.
+
 ### 2. Geographic Ticket Distribution
 
-An interactive map displays support ticket activity across Hail, Riyadh, and Jeddah.
+An interactive geographic map displays ticket activity across:
 
-Users can select a city to filter the other dashboard visualizations.
+- Hail
+- Riyadh
+- Jeddah
+
+Each city is represented by a geographic data point.
+
+Users can select a city to filter the dashboard and explore its associated ticket data.
 
 ### 3. Ticket Category Analysis
 
-A horizontal bar chart displays the number of tickets by technical issue category:
+A horizontal bar chart visualizes the number of support tickets across three technical issue categories:
 
 - Hardware
 - Software
 - Network
 
-### 4. Interactive Filtering
+The chart helps identify which issue categories account for the largest share of requests.
 
-The dashboard uses Tableau's filtering functionality to connect geographic selections with other visualizations.
+### 4. Interactive Dashboard Filtering
 
-Selecting a city updates the total ticket indicator and ticket category chart.
+The geographic map is connected to the other dashboard components through Tableau's interactive filtering functionality.
+
+When a city is selected:
+
+- The total ticket KPI updates.
+- The category chart displays data for the selected city.
+- Users can compare ticket distributions across different locations.
+
+For example, selecting Hail displays 45 support tickets and their distribution across hardware, software, and network issues.
 
 ---
 
 ## Dataset
 
-The project uses a small, simulated dataset created for educational purposes.
+This project uses a fictional dataset created specifically for educational and portfolio purposes.
 
-### Dataset Fields
+**[View the Sample Dataset](it-support-tickets.csv.csv)**
+
+### Dataset Structure
 
 | Field | Description |
 |---|---|
 | City | City associated with the support requests |
-| Category | Type of technical issue |
+| Category | Technical issue category |
 | Tickets | Number of support tickets |
 | Resolved | Number of resolved tickets |
 
-The dataset includes nine records representing combinations of three cities and three issue categories.
+The dataset contains nine records representing combinations of three Saudi cities and three technical issue categories.
 
-**All data is fictional and does not represent actual company operations or real support requests.**
+The dashboard primarily visualizes the City, Category, and Tickets fields.
+
+**Data Privacy Notice:** All data in this project is simulated. It does not contain real customer information, confidential records, or actual organizational support tickets.
 
 ---
 
@@ -102,7 +148,7 @@ The dataset includes nine records representing combinations of three cities and 
 
 ### Tickets by City
 
-| City | Tickets |
+| City | Total Tickets |
 |---|---:|
 | Hail | 45 |
 | Riyadh | 52 |
@@ -111,77 +157,155 @@ The dataset includes nine records representing combinations of three cities and 
 
 ### Tickets by Category
 
-| Category | Tickets |
+| Category | Total Tickets |
 |---|---:|
 | Hardware | 49 |
 | Software | 67 |
 | Network | 36 |
 | **Total** | **152** |
 
-### Key Observations
+---
 
-- Jeddah has the highest ticket volume in the sample dataset.
-- Software issues represent the largest ticket category.
-- Geographic filtering makes it possible to compare issue distributions across cities.
+## Key Insights
 
-These observations apply only to the simulated dataset.
+Based on the simulated dataset:
+
+**1. Highest Ticket Volume**
+
+Jeddah recorded the highest number of support tickets, with 55 requests.
+
+**2. Most Common Issue Category**
+
+Software-related requests represented the largest category, with 67 tickets.
+
+**3. Geographic Comparison**
+
+The dashboard makes it possible to compare support activity between Hail, Riyadh, and Jeddah.
+
+**4. Interactive Analysis**
+
+City-based filtering enables users to examine the distribution of technical issues within individual locations.
+
+These observations describe only the fictional dataset and should not be interpreted as findings about actual IT support operations.
 
 ---
 
 ## Development Process
 
-1. Created a sample IT support dataset.
-2. Organized the data in CSV format.
-3. Imported the dataset into Tableau Public.
-4. Reviewed the data fields and data types.
-5. Created a total ticket KPI.
-6. Developed ticket distribution visualizations.
-7. Created an interactive geographic map.
-8. Combined visualizations into a single dashboard.
-9. Configured interactive filtering between dashboard components.
-10. Published the completed dashboard on Tableau Public.
+### Step 1: Dataset Preparation
+
+Created a small sample dataset containing city names, technical issue categories, total tickets, and resolved tickets.
+
+Organized the data in a structured table and exported it as a CSV file.
+
+### Step 2: Data Connection
+
+Imported the CSV dataset into Tableau Public.
+
+Reviewed the available data fields and checked the recognized data types.
+
+### Step 3: KPI Development
+
+Created a worksheet to calculate and display the total number of support tickets using Tableau's SUM aggregation.
+
+### Step 4: Data Visualization
+
+Developed horizontal bar charts to compare ticket counts across cities and technical issue categories.
+
+### Step 5: Geographic Visualization
+
+Created an interactive geographic map displaying the Saudi cities represented in the dataset.
+
+### Step 6: Dashboard Design
+
+Combined the total ticket KPI, geographic map, and category chart into one dashboard.
+
+Adjusted the layout, text formatting, titles, and chart presentation.
+
+### Step 7: Interactive Filtering
+
+Configured the geographic map to function as an interactive filter.
+
+Tested the filtering behavior to verify that the KPI and category chart updated when selecting a city.
+
+### Step 8: Publishing
+
+Published the completed dashboard on Tableau Public.
+
+Documented the project and its dataset in this GitHub repository.
 
 ---
 
 ## Skills Demonstrated
 
-- Data Preparation
-- Data Aggregation
+- Data Analysis
 - Data Visualization
-- KPI Design
+- Tableau Public
+- Interactive Dashboard Development
+- KPI Development
 - Geographic Data Visualization
-- Dashboard Development
-- Interactive Filtering
+- Data Aggregation
+- Data Filtering
+- Data Interpretation
 - Analytical Thinking
 - Problem-Solving
+- Technical Documentation
 
 ---
 
 ## Learning Outcomes
 
-Through this project, I gained practical experience in transforming structured data into interactive visualizations.
+Through this project, I gained practical experience in developing an interactive dashboard using Tableau Public.
 
-I practiced creating KPIs, designing charts, working with geographic data, and connecting dashboard components through interactive filters.
+I learned how to:
 
-The project strengthened my foundational skills in business intelligence, data analytics, and Tableau dashboard development.
+- Import and explore structured datasets.
+- Work with dimensions and measures.
+- Calculate and display aggregated values.
+- Design charts and KPI indicators.
+- Represent geographic information visually.
+- Connect multiple visualizations through interactive filters.
+- Organize charts into a user-friendly dashboard.
+- Publish and document a data visualization project.
+
+This project strengthened my foundational knowledge of data analytics and business intelligence and provided hands-on experience with Tableau.
+
+---
+
+## Project Files
+
+| File | Description |
+|---|---|
+| [dashboard-preview.png](dashboard-preview.png) | Screenshot of the completed dashboard |
+| [it-support-tickets.csv.csv](it-support-tickets.csv.csv) | Simulated IT support dataset |
+| [README.md](README.md) | Project documentation |
+
+The interactive Tableau workbook can be explored through the published Tableau Public link.
 
 ---
 
 ## Project Scope
 
-This is an educational portfolio project built using fictional data.
+This is an independent educational portfolio project.
 
-It is not connected to a production IT support system and does not use confidential or real customer information.
+It was developed to practice data visualization concepts and demonstrate the use of Tableau Public for interactive reporting.
+
+The project does not represent a production IT support system or actual company operations.
+
+All displayed values and observations are based on simulated training data.
 
 ---
 
 ## Developer
 
 **Shamma Thari Alreshidi**  
-Computer Engineering Graduate – University of Hail
+Computer Engineering Graduate  
+University of Hail, Saudi Arabia
 
 **GitHub:** https://github.com/shamma-engineer
 
 **LinkedIn:** https://www.linkedin.com/in/shamma-thari
 
-**Tableau Public:** https://public.tableau.com/app/profile/shamma.thari
+**Tableau Public Profile:** https://public.tableau.com/app/profile/shamma.thari
+
+**Live Dashboard:** https://public.tableau.com/app/profile/shamma.thari/viz/book1_17956673543020/ITSupportPerformanceDashboard
