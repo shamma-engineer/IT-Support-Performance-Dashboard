@@ -1,0 +1,10 @@
+City,Category,Tickets,Resolved
+Hail,Hardware,15,12
+Hail,Software,20,18
+Hail,Network,10,8
+Riyadh,Hardware,18,15
+Riyadh,Software,22,20
+Riyadh,Network,12,10
+Jeddah,Hardware,16,14
+Jeddah,Software,25,23
+Jeddah,Network,14,12
